@@ -4,25 +4,29 @@
     "authors": [
         {
             "name": "Aurimas Niekis",
-            "email": "aurimas.niekis@gmail.com"
+            "email": "aurimas@niekis.lt"
         }
     ],
     "type": "library",
     "license": "MIT",
     "require-dev": {
-        "phpunit/phpunit": "^4.0",
-        "funct/funct-dev": "^0.1.0"
+        "phpunit/phpunit": "^4.0"
     },
     "autoload": {
         "psr-4": {
             "Funct\\": "src"
         },
         "files": [
-            "src/loader.php"
+            "src/Collection.php",
+            "src/General.php",
+            "src/Invoke.php",
+            "src/Object.php",
+            "src/Strings.php"
         ]
     },
-    "config": {
-        "bin-dir": "bin"
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-ci": "vendor/bin/phpunit -c phpunit.xml.ci"
     },
     "minimum-stability": "dev",
     "extra": {

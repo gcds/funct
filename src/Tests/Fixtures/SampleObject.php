@@ -6,7 +6,7 @@ namespace Funct\Tests\Fixtures;
  * Class SampleObject
  *
  * @package Funct\Tests\Fixtures
- * @author Aurimas Niekis <aurimas.niekis@gmail.com>
+ * @author Aurimas Niekis <aurimas@niekis.lt>
  */
 class SampleObject
 {
